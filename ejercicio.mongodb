@@ -1,0 +1,13 @@
+//PUNTO 3,4//
+db.pokeData.find({$or:[{"name":{$eq:"Snorlax"}},{"name":{$eq:"Charmander"}},{"name":{$eq:"Dratini"}},{"name":{$eq:"Magikarp"}},{"id":{$eq:"025"}},{"id":{$eq:"123"}},{"id":{$eq:"151"}},{"id":{$eq:"035"}}]}).sort({name: 1}).pretty()//
+//PUNTO1,2//
+db.pokeData.find({"name":{$eq:"Snorlax"}}).pretty()
+db.pokeData.find({"name":{$eq:"Charmander"}}).pretty()
+db.pokeData.find({"name":{$eq:"Dratini"}}).pretty()
+db.pokeData.find({"name":{$eq:"Magikarp"}}).pretty()
+db.pokeData.find({id:{$eq:"025"}}).pretty()
+db.pokeData.find({id:{$eq:"035"}}).pretty()
+db.pokeData.find({id:{$eq:"123"}}).pretty()
+db.pokeData.find({id:{$eq:"151"}}).pretty()
+
+
